@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F1C21622C4E76BC00161A8B /* NewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C21612C4E76BC00161A8B /* NewCardView.swift */; };
 		9F6151042C3F2758007F743C /* Bilancio_betaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6151032C3F2758007F743C /* Bilancio_betaApp.swift */; };
-		9F6151062C3F2758007F743C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6151052C3F2758007F743C /* ContentView.swift */; };
 		9F6151082C3F275A007F743C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6151072C3F275A007F743C /* Assets.xcassets */; };
 		9F61510B2C3F275A007F743C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F61510A2C3F275A007F743C /* Preview Assets.xcassets */; };
+		9F9DD9072C4862CC00F4DD84 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9DD9062C4862CC00F4DD84 /* DataStore.swift */; };
+		9F9DD9092C4866FE00F4DD84 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9DD9082C4866FE00F4DD84 /* Card.swift */; };
+		9F9DD90B2C4A326300F4DD84 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9DD90A2C4A326300F4DD84 /* CardView.swift */; };
+		9F9DD90E2C4A3C0800F4DD84 /* MarkCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 9F9DD90D2C4A3C0800F4DD84 /* MarkCodable */; };
+		9F9DD9102C4A3C0800F4DD84 /* marktest in Frameworks */ = {isa = PBXBuildFile; productRef = 9F9DD90F2C4A3C0800F4DD84 /* marktest */; };
+		9F9DD9122C4A85C100F4DD84 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9DD9112C4A85C100F4DD84 /* Entity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F1C21612C4E76BC00161A8B /* NewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardView.swift; sourceTree = "<group>"; };
 		9F6151002C3F2758007F743C /* Bilancio_beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bilancio_beta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6151032C3F2758007F743C /* Bilancio_betaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bilancio_betaApp.swift; sourceTree = "<group>"; };
-		9F6151052C3F2758007F743C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9F6151072C3F275A007F743C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F61510A2C3F275A007F743C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9F9DD9062C4862CC00F4DD84 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		9F9DD9082C4866FE00F4DD84 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		9F9DD90A2C4A326300F4DD84 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		9F9DD9112C4A85C100F4DD84 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F9DD90E2C4A3C0800F4DD84 /* MarkCodable in Frameworks */,
+				9F9DD9102C4A3C0800F4DD84 /* marktest in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +63,10 @@
 		9F6151022C3F2758007F743C /* Bilancio_beta */ = {
 			isa = PBXGroup;
 			children = (
+				9F9DD8FB2C478DA000F4DD84 /* ModelData */,
+				9F9DD8F62C46A1D100F4DD84 /* Model */,
+				9F6151112C3F2766007F743C /* Views */,
 				9F6151032C3F2758007F743C /* Bilancio_betaApp.swift */,
-				9F6151052C3F2758007F743C /* ContentView.swift */,
 				9F6151072C3F275A007F743C /* Assets.xcassets */,
 				9F6151092C3F275A007F743C /* Preview Content */,
 			);
@@ -65,6 +79,32 @@
 				9F61510A2C3F275A007F743C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9F6151112C3F2766007F743C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F9DD90A2C4A326300F4DD84 /* CardView.swift */,
+				9F9DD9112C4A85C100F4DD84 /* Entity.swift */,
+				9F1C21612C4E76BC00161A8B /* NewCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9F9DD8F62C46A1D100F4DD84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F9DD9082C4866FE00F4DD84 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F9DD8FB2C478DA000F4DD84 /* ModelData */ = {
+			isa = PBXGroup;
+			children = (
+				9F9DD9062C4862CC00F4DD84 /* DataStore.swift */,
+			);
+			path = ModelData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +123,10 @@
 			dependencies = (
 			);
 			name = Bilancio_beta;
+			packageProductDependencies = (
+				9F9DD90D2C4A3C0800F4DD84 /* MarkCodable */,
+				9F9DD90F2C4A3C0800F4DD84 /* marktest */,
+			);
 			productName = Bilancio_beta;
 			productReference = 9F6151002C3F2758007F743C /* Bilancio_beta.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +155,9 @@
 				Base,
 			);
 			mainGroup = 9F6150F72C3F2758007F743C;
+			packageReferences = (
+				9F9DD90C2C4A3C0700F4DD84 /* XCRemoteSwiftPackageReference "MarkCodable" */,
+			);
 			productRefGroup = 9F6151012C3F2758007F743C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F6151062C3F2758007F743C /* ContentView.swift in Sources */,
 				9F6151042C3F2758007F743C /* Bilancio_betaApp.swift in Sources */,
+				9F1C21622C4E76BC00161A8B /* NewCardView.swift in Sources */,
+				9F9DD90B2C4A326300F4DD84 /* CardView.swift in Sources */,
+				9F9DD9122C4A85C100F4DD84 /* Entity.swift in Sources */,
+				9F9DD9092C4866FE00F4DD84 /* Card.swift in Sources */,
+				9F9DD9072C4862CC00F4DD84 /* DataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,9 +320,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bilancio_beta/Preview Content\"";
+				DEVELOPMENT_TEAM = H69M8KLTZ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -286,6 +339,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anacvasniuc.Bilancio-beta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,9 +351,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bilancio_beta/Preview Content\"";
+				DEVELOPMENT_TEAM = H69M8KLTZ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -314,6 +370,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anacvasniuc.Bilancio-beta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,6 +399,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9F9DD90C2C4A3C0700F4DD84 /* XCRemoteSwiftPackageReference "MarkCodable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MarkCodable/MarkCodable.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9F9DD90D2C4A3C0800F4DD84 /* MarkCodable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F9DD90C2C4A3C0700F4DD84 /* XCRemoteSwiftPackageReference "MarkCodable" */;
+			productName = MarkCodable;
+		};
+		9F9DD90F2C4A3C0800F4DD84 /* marktest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F9DD90C2C4A3C0700F4DD84 /* XCRemoteSwiftPackageReference "MarkCodable" */;
+			productName = marktest;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9F6150F82C3F2758007F743C /* Project object */;
 }

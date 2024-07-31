@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct Bilancio_betaApp: App {
+    @StateObject var store = DataStore()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CardView()
+                .environmentObject(store)
+                .onAppear {
+                    print(URL.documentsDirectory.path)
+                }
         }
     }
 }

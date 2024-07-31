@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F2BB073A-683B-41F2-B629-2231F6D6829D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16EFC6B5-4190-45A8-AB09-27CD607748F1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bilancio_beta/Views/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "16EFC6B5-4190-45A8-AB09-27CD607748F1 - aa62743ec1cf2004"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Double) -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0)&gt; in Bilancio_beta.ContentView.body.getter : some"
+                  moduleName = "Bilancio_beta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anacvasniuc/Desktop/Bilancio_beta/Bilancio_beta/Views/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "16EFC6B5-4190-45A8-AB09-27CD607748F1 - f52f3cc916a73a9f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Double, Swift.Double) -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0)&gt; in Bilancio_beta.ContentView.body.getter : some"
+                  moduleName = "Bilancio_beta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anacvasniuc/Desktop/Bilancio_beta/Bilancio_beta/Views/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D2D7DFE-FD64-49E8-A9A9-1289D3188FDE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bilancio_beta/ModelData/DataStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "addMoviment(_:spesa:for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8892CE51-06F0-43BE-9290-12FCBDCC2C63"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bilancio_beta/Views/CardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF8FEF55-B4E1-468B-A5E6-56E1745ECD6F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bilancio_beta/ModelData/DataStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "deleteMoviment(title:for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AF8FEF55-B4E1-468B-A5E6-56E1745ECD6F - a1269d3b6db7e623"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bilancio_beta.DataStore.deleteMoviment(title: Swift.String, for: Bilancio_beta.Card) -&gt; ()"
+                  moduleName = "Bilancio_beta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anacvasniuc/Desktop/Bilancio_beta/Bilancio_beta/ModelData/DataStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "868">
+               </Location>
+               <Location
+                  uuid = "AF8FEF55-B4E1-468B-A5E6-56E1745ECD6F - a1269d3b6db7e623"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bilancio_beta.DataStore.deleteMoviment(title: Swift.String, for: Bilancio_beta.Card) -&gt; ()"
+                  moduleName = "Bilancio_beta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anacvasniuc/Desktop/Bilancio_beta/Bilancio_beta/ModelData/DataStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "808">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F5EFCDF0-1A2D-4E0D-843F-8B413AF8189B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bilancio_beta/ModelData/DataStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "addMoviment(_:spesa:for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F5EFCDF0-1A2D-4E0D-843F-8B413AF8189B - bfba62fa64ffa81"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bilancio_beta.DataStore.addMoviment(_: Swift.String, spesa: Swift.String, for: Bilancio_beta.Card) -&gt; ()"
+                  moduleName = "Bilancio_beta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anacvasniuc/Desktop/Bilancio_beta/Bilancio_beta/ModelData/DataStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "1088">
+               </Location>
+               <Location
+                  uuid = "F5EFCDF0-1A2D-4E0D-843F-8B413AF8189B - bfba62fa64ffae2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bilancio_beta.DataStore.addMoviment(_: Swift.String, spesa: Swift.String, for: Bilancio_beta.Card) -&gt; ()"
+                  moduleName = "Bilancio_beta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anacvasniuc/Desktop/Bilancio_beta/Bilancio_beta/ModelData/DataStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "1008">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
