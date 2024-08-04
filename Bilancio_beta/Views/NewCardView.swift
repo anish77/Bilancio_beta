@@ -15,49 +15,78 @@ struct NewCardView: View {
         card == nil
     }
     
-    // Form Fields
     @State private var cardTitle = ""
     @State private var amount = ""
     @State private var spesa = ""
+    //private var showError: Bool = false
+    @State private var errorMessage = "La spesa è maggiore del importo disponibile!"
     
-    var isDisabled: Bool {
+    let currencyCode = "EUR"
+    
+    var isEnabled: Bool {
+        
         if newCard {
-            return [cardTitle, amount]
-                .map {!$0.isEmpty}
-                .filter {$0 == false}
-                .count > 0
-            
+            let amount_ = converterAmount(text: amount )
+            return  cardTitle != "" && amount_  > 0.0
         } else {
-            return [cardTitle, spesa]
-                .map {!$0.isEmpty}
-                .filter {$0 == false }
-                .count > 0
-            
+            let spesa_ = converterSpesa(text: spesa)
+            return cardTitle != "" && spesa_ > 0.0
         }
     }
+    
+    func converterAmount(text: String) -> Double {
+        let textDouble = Double(amount.replacingOccurrences(of: ",", with: ".")) ?? 0
+        return textDouble
+    }
+    
+    func converterSpesa(text: String) -> Double {
+        let textDouble = Double(spesa.replacingOccurrences(of: ",", with: ".")) ?? 0
+        return textDouble
+    }
+    
     var body: some View {
         NavigationStack {
             Form {
                 TextField("\(newCard ? "Card Title" : "Description")", text: $cardTitle)
-                
-                TextField("\(newCard ? "Amount" : "Spesa")", text: (newCard ? $amount : $spesa ))
+                TextField("\(newCard ? "Amount" : "Spesa")", text: newCard ? $amount : $spesa )
                     .keyboardType(.decimalPad)
                 
                 HStack {
                     Spacer()
                     Button("Add") {
                         if newCard {
-                            store.addNewCard(card: Card(title: cardTitle, amount: amount, rimasto: amount))
-                            
+                            store.addNewCard(card: Card(title: cardTitle, amount: converterAmount(text: amount), rimasto: converterAmount(text: amount) ))
                         } else {
+                            
                             if let card {
-                                store.addMoviment(cardTitle, spesa: spesa, for: card)
+                                if converterSpesa(text: spesa) < card.rimasto {
+                                  //  showError.toggle()
+                                    store.addMoviment(cardTitle, spesa: converterSpesa(text: spesa), for: card)
+                                }
+                                else {
+                                   // showError.toggle()
+                                    //triggerError()
+                                }
                             }
                         }
                         dismiss()
                     }
-                    .disabled(isDisabled)
+                    .disabled(!isEnabled)
                     .buttonStyle(.borderedProminent)
+                }
+                //PopUp
+               /*
+                    .alert("Errore", isPresented: showError) {
+                        Button("OK") {}
+                    }
+                    
+                */
+                    
+                    /* Alert(
+                     title: Text("Error"),
+                     message: Text(errorMessage),
+                     dismissButton: .default(Text("OK"))
+                     )*/
                 }
             }
             .textFieldStyle(.roundedBorder)
@@ -77,11 +106,18 @@ struct NewCardView: View {
             }
         }
     }
-}
-
-struct NewCardView_Previews: PreviewProvider {
-    static var previews: some View {
-        NewCardView()
-    }
-}
-
+   /*
+    mutating func triggerError() {
+        errorMessage = "La spesa è maggiore del importo disponibile!"
+        showError = true
+        
+        print(showError)
+    }*/
+//}
+/*
+ struct NewCardView_Previews: PreviewProvider {
+ static var previews: some View {
+ NewCardView()
+ }
+ }
+ */

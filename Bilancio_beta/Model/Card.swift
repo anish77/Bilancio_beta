@@ -7,21 +7,15 @@
 
 import SwiftUI
 
-struct Card: Identifiable, Codable {
+struct Card: Identifiable, Codable, Hashable {
     
     var id = UUID().uuidString
     var title: String
-    var amount: String
-    var rimasto: String
-    var transaction: [String] = []
+    var amount: Double//Decimal
+    var rimasto: Double//Decimal
+    var transaction = [String: Double]()
    
+}
 
-}
-/*
-struct Info: Codable {
-    var title: String
-    var payment: Double
-}
-*/
 
 

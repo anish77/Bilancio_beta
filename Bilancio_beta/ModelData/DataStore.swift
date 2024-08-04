@@ -11,29 +11,24 @@ import MarkCodable
 class DataStore: ObservableObject  {
     @Published var cards: [Card] = []
     @Published var entity: Entity?
-  //  @Published var operation: Operation?
-    
-    // this is initialized into ContentView
+    @Published var showAlert = false
+  
     init() {
         loadCards()
     }
     
-    func addMoviment(_ title: String, spesa: String, for card: Card) {
-        
+    func addMoviment(_ title: String, spesa: Double, for card: Card) {
         if let index = cards.firstIndex(where: { $0.id == card.id }) {
             
-            guard let spesa_ = Double( spesa.replacingOccurrences(of: ",", with: ".")) else { return }
-            
-           // cards[index].transaction.append(title)
-           // cards[index].transaction.append(String( spesa_))
-            var movimento = title + String( spesa_)
-           
-            cards[index].transaction.append(movimento)
-            
-           // guard let rimasto_ = Double( cards[index].rimasto .replacingOccurrences(of: ",", with: ".") ) else { return }
-          //  let total = rimasto_ - spesa_
-          //  cards[index].rimasto =  String( total )
-            save()
+            if cards[index].rimasto < spesa {
+                showAlert = true
+                print("Errore")
+            } else {
+                showAlert = false
+                cards[index].transaction.updateValue(spesa, forKey: title)
+                cards[index].rimasto -= spesa
+                save()
+            }
         }
     }
     
@@ -49,21 +44,13 @@ class DataStore: ObservableObject  {
         }
     }
     
-    func deleteMoviment(title: String, for card: Card) {
-        if let index = cards.firstIndex(where: { $0.id == card.id }) {
-            if let cardIndex = cards[index].transaction.firstIndex(where: { $0 == title}) {
-                
-                cards[index].transaction.remove(at: cardIndex)
-                
-                save()
-                updateInfo(for: card)
-            }
-        }
-    }
     
-    func updateInfo(for card: Card){
-        print(card)
-        //card.rimasto =
+    func deleteMoviment(title: String, spesa: Double, for card: Card) {
+        if let index = cards.firstIndex(where: { $0.id == card.id }) {
+            cards[index].transaction.removeValue(forKey: title)
+            cards[index].rimasto += spesa
+            save()
+        }
     }
     
     func save(){

@@ -55,31 +55,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3D2D7DFE-FD64-49E8-A9A9-1289D3188FDE"
+            uuid = "FE4B6F27-9E0A-41F0-84C1-E29E184AFBD6"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Bilancio_beta/ModelData/DataStore.swift"
+            filePath = "Bilancio_beta/Views/Transactions.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "addMoviment(_:spesa:for:)"
-            landmarkType = "7">
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "overviewSection"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8892CE51-06F0-43BE-9290-12FCBDCC2C63"
+            uuid = "FF5F3A92-EC28-4017-A27A-B65333590E60"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bilancio_beta/Views/Transactions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "overviewSection"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F97E585-10D3-436E-B63E-19E53495E522"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Bilancio_beta/Views/CardView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -87,20 +103,36 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AF8FEF55-B4E1-468B-A5E6-56E1745ECD6F"
-            shouldBeEnabled = "Yes"
+            uuid = "304A4362-FC73-4362-934B-CAAD96374922"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bilancio_beta/Views/CardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E7066B3A-A867-49A7-A171-144D5BC383FA"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Bilancio_beta/ModelData/DataStore.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "deleteMoviment(title:for:)"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "deleteMoviment(title:spesa:for:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "AF8FEF55-B4E1-468B-A5E6-56E1745ECD6F - a1269d3b6db7e623"
+                  uuid = "E7066B3A-A867-49A7-A171-144D5BC383FA - a1269d3b6db7e508"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -110,24 +142,24 @@
                   urlString = "file:///Users/anacvasniuc/Desktop/Bilancio_beta/Bilancio_beta/ModelData/DataStore.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "868">
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "552">
                </Location>
                <Location
-                  uuid = "AF8FEF55-B4E1-468B-A5E6-56E1745ECD6F - a1269d3b6db7e623"
+                  uuid = "E7066B3A-A867-49A7-A171-144D5BC383FA - b53e729a8306c8b3"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Bilancio_beta.DataStore.deleteMoviment(title: Swift.String, for: Bilancio_beta.Card) -&gt; ()"
+                  symbolName = "Bilancio_beta.DataStore.deleteMoviment(title: Swift.String, spesa: Swift.Double, for: Bilancio_beta.Card) -&gt; ()"
                   moduleName = "Bilancio_beta"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/anacvasniuc/Desktop/Bilancio_beta/Bilancio_beta/ModelData/DataStore.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "808">
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "528">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -135,47 +167,63 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F5EFCDF0-1A2D-4E0D-843F-8B413AF8189B"
+            uuid = "2B05A549-B375-4D1A-B66B-9717A19BDFF5"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Bilancio_beta/ModelData/DataStore.swift"
+            filePath = "Bilancio_beta/Views/CardView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "addMoviment(_:spesa:for:)"
-            landmarkType = "7">
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B5F49AF1-EDA2-4967-8BF3-E7342BB13F7C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bilancio_beta/Views/NewCardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "NewCardView"
+            landmarkType = "14">
             <Locations>
                <Location
-                  uuid = "F5EFCDF0-1A2D-4E0D-843F-8B413AF8189B - bfba62fa64ffa81"
+                  uuid = "B5F49AF1-EDA2-4967-8BF3-E7342BB13F7C - ab947101facc37c2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Bilancio_beta.DataStore.addMoviment(_: Swift.String, spesa: Swift.String, for: Bilancio_beta.Card) -&gt; ()"
+                  symbolName = "Bilancio_beta.NewCardView.init() -&gt; Bilancio_beta.NewCardView"
                   moduleName = "Bilancio_beta"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anacvasniuc/Desktop/Bilancio_beta/Bilancio_beta/ModelData/DataStore.swift"
+                  urlString = "file:///Users/anacvasniuc/Desktop/Bilancio_beta/Bilancio_beta/Views/NewCardView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "1088">
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "588">
                </Location>
                <Location
-                  uuid = "F5EFCDF0-1A2D-4E0D-843F-8B413AF8189B - bfba62fa64ffae2"
+                  uuid = "B5F49AF1-EDA2-4967-8BF3-E7342BB13F7C - 86767d70311afae2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Bilancio_beta.DataStore.addMoviment(_: Swift.String, spesa: Swift.String, for: Bilancio_beta.Card) -&gt; ()"
+                  symbolName = "Bilancio_beta.NewCardView.init(store: SwiftUI.EnvironmentObject&lt;Bilancio_beta.DataStore&gt;, dismiss: SwiftUI.Environment&lt;SwiftUI.DismissAction&gt;, card: Swift.Optional&lt;Bilancio_beta.Card&gt;) -&gt; Bilancio_beta.NewCardView"
                   moduleName = "Bilancio_beta"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anacvasniuc/Desktop/Bilancio_beta/Bilancio_beta/ModelData/DataStore.swift"
+                  urlString = "file:///Users/anacvasniuc/Desktop/Bilancio_beta/Bilancio_beta/Views/NewCardView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "1008">
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "480">
                </Location>
             </Locations>
          </BreakpointContent>
