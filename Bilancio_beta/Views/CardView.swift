@@ -9,11 +9,13 @@ import SwiftUI
 
 
 struct CardView: View{
-    @State
-    var balance: Double = 1500.00
+   
     let currencyCode = "EUR"
-
+    var deleteMoviment: Bool = false
+    var errorMessage = "Sei sicuro ?"
+    
     @EnvironmentObject var store: DataStore
+    
     
     var body: some View {
         NavigationStack {
@@ -41,7 +43,10 @@ struct CardView: View{
                                 Text( String(format: "%.2f", card.transaction[key] ?? 0 ))
                                 
                                     .swipeActions {
+                                        
                                         Button(role: .destructive) {
+                                            
+                                            
                                             store.deleteMoviment(title: key, spesa: card.transaction[key] ?? 0.0, for: card)
                                         } label: {
                                             Image(systemName: "trash")
@@ -52,6 +57,10 @@ struct CardView: View{
                     }
                 }
             }
+            //Alert
+          /*  .alert(errorMessage, isPresented: deleteMoviment) {
+                Button("Yes") {}
+            }*/
             .listStyle(.plain)
             .navigationTitle("Cards")
             .toolbar {

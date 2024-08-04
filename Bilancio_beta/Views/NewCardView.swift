@@ -18,8 +18,9 @@ struct NewCardView: View {
     @State private var cardTitle = ""
     @State private var amount = ""
     @State private var spesa = ""
-    //private var showError: Bool = false
+    @State private var showError: Bool = false
     @State private var errorMessage = "La spesa è maggiore del importo disponibile!"
+    @FocusState private var isFocused: Bool
     
     let currencyCode = "EUR"
     
@@ -48,45 +49,42 @@ struct NewCardView: View {
         NavigationStack {
             Form {
                 TextField("\(newCard ? "Card Title" : "Description")", text: $cardTitle)
+                    .focused($isFocused)
+                
                 TextField("\(newCard ? "Amount" : "Spesa")", text: newCard ? $amount : $spesa )
                     .keyboardType(.decimalPad)
-                
+                    
                 HStack {
                     Spacer()
                     Button("Add") {
+                        isFocused = true
                         if newCard {
                             store.addNewCard(card: Card(title: cardTitle, amount: converterAmount(text: amount), rimasto: converterAmount(text: amount) ))
                         } else {
                             
                             if let card {
                                 if converterSpesa(text: spesa) < card.rimasto {
-                                  //  showError.toggle()
                                     store.addMoviment(cardTitle, spesa: converterSpesa(text: spesa), for: card)
+                                    dismiss()
                                 }
                                 else {
-                                   // showError.toggle()
-                                    //triggerError()
+                                    showError.toggle()
                                 }
                             }
                         }
-                        dismiss()
+                    }
+                    .onAppear{
+                        DispatchQueue.main.asyncAfter(deadline: .now()) {
+                            isFocused.toggle()
+                        }
                     }
                     .disabled(!isEnabled)
                     .buttonStyle(.borderedProminent)
+                   
                 }
-                //PopUp
-               /*
-                    .alert("Errore", isPresented: showError) {
-                        Button("OK") {}
-                    }
-                    
-                */
-                    
-                    /* Alert(
-                     title: Text("Error"),
-                     message: Text(errorMessage),
-                     dismissButton: .default(Text("OK"))
-                     )*/
+                //Alert
+                .alert(errorMessage, isPresented: $showError) {
+                    Button("OK") {}
                 }
             }
             .textFieldStyle(.roundedBorder)
@@ -106,14 +104,8 @@ struct NewCardView: View {
             }
         }
     }
-   /*
-    mutating func triggerError() {
-        errorMessage = "La spesa è maggiore del importo disponibile!"
-        showError = true
-        
-        print(showError)
-    }*/
-//}
+}
+
 /*
  struct NewCardView_Previews: PreviewProvider {
  static var previews: some View {
