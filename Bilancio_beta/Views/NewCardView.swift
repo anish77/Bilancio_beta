@@ -21,6 +21,7 @@ struct NewCardView: View {
     @State private var showError: Bool = false
     @State private var errorMessage = "La spesa è maggiore del importo disponibile!"
     @FocusState private var isFocused: Bool
+    @State private var data = Date()
     
     let currencyCode = "EUR"
     
@@ -53,18 +54,22 @@ struct NewCardView: View {
                 
                 TextField("\(newCard ? "Amount" : "Spesa")", text: newCard ? $amount : $spesa )
                     .keyboardType(.decimalPad)
-                    
+                DatePicker("Data: ", selection: $data, displayedComponents: .date)
                 HStack {
                     Spacer()
                     Button("Add") {
-                        isFocused = true
                         if newCard {
-                            store.addNewCard(card: Card(title: cardTitle, amount: converterAmount(text: amount), rimasto: converterAmount(text: amount) ))
+                            store.addNewCard(card: Card(title: cardTitle, amount: converterAmount(text: amount), rimasto: converterAmount(text: amount), data: data ))
+                            dismiss()
                         } else {
                             
                             if let card {
-                                if converterSpesa(text: spesa) < card.rimasto {
-                                    store.addMoviment(cardTitle, spesa: converterSpesa(text: spesa), for: card)
+                                if converterSpesa(text: spesa) <= card.rimasto {
+                                    
+                                    store.addMoviment(transaction: TransactionDetails(
+                                                                title: cardTitle,
+                                                                amount: converterSpesa(text: spesa),
+                                                                data: data), for: card)
                                     dismiss()
                                 }
                                 else {

@@ -11,27 +11,20 @@ import MarkCodable
 class DataStore: ObservableObject  {
     @Published var cards: [Card] = []
     @Published var entity: Entity?
-    @Published var showAlert = false
-  
+    
     init() {
         loadCards()
     }
     
-    func addMoviment(_ title: String, spesa: Double, for card: Card) {
+    func addMoviment(transaction: TransactionDetails, for card: Card) {
         if let index = cards.firstIndex(where: { $0.id == card.id }) {
+            cards[index].transaction.append(transaction)
+            cards[index].rimasto -= transaction.amount
+            print(cards[index].transaction)
             
-            if cards[index].rimasto < spesa {
-                showAlert = true
-                print("Errore")
-            } else {
-                showAlert = false
-                cards[index].transaction.updateValue(spesa, forKey: title)
-                cards[index].rimasto -= spesa
-                save()
-            }
+            save()
         }
     }
-    
     func addNewCard(card: Card) {
         cards.append(card)
         save()
@@ -44,15 +37,14 @@ class DataStore: ObservableObject  {
         }
     }
     
-    
-    func deleteMoviment(title: String, spesa: Double, for card: Card) {
+    func deleteMoviment(transaction: TransactionDetails, for card: Card) {
         if let index = cards.firstIndex(where: { $0.id == card.id }) {
-            cards[index].transaction.removeValue(forKey: title)
-            cards[index].rimasto += spesa
+            cards[index].transaction.remove(at: index)
+            cards[index].rimasto += transaction.amount
             save()
         }
     }
-    
+
     func save(){
         //JSON
         do {

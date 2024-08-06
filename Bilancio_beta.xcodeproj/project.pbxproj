@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9F1C21622C4E76BC00161A8B /* NewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C21612C4E76BC00161A8B /* NewCardView.swift */; };
-		9F264B612C59F23B00BFBC50 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F264B602C59F23B00BFBC50 /* Transactions.swift */; };
 		9F6151042C3F2758007F743C /* Bilancio_betaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6151032C3F2758007F743C /* Bilancio_betaApp.swift */; };
 		9F6151082C3F275A007F743C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6151072C3F275A007F743C /* Assets.xcassets */; };
 		9F61510B2C3F275A007F743C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F61510A2C3F275A007F743C /* Preview Assets.xcassets */; };
@@ -22,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		9F1C21612C4E76BC00161A8B /* NewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardView.swift; sourceTree = "<group>"; };
-		9F264B602C59F23B00BFBC50 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
 		9F6151002C3F2758007F743C /* Bilancio_beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bilancio_beta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6151032C3F2758007F743C /* Bilancio_betaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bilancio_betaApp.swift; sourceTree = "<group>"; };
 		9F6151072C3F275A007F743C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 				9F9DD90A2C4A326300F4DD84 /* CardView.swift */,
 				9F9DD9112C4A85C100F4DD84 /* Entity.swift */,
 				9F1C21612C4E76BC00161A8B /* NewCardView.swift */,
-				9F264B602C59F23B00BFBC50 /* Transactions.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,7 +186,6 @@
 			files = (
 				9F6151042C3F2758007F743C /* Bilancio_betaApp.swift in Sources */,
 				9F1C21622C4E76BC00161A8B /* NewCardView.swift in Sources */,
-				9F264B612C59F23B00BFBC50 /* Transactions.swift in Sources */,
 				9F9DD90B2C4A326300F4DD84 /* CardView.swift in Sources */,
 				9F9DD9122C4A85C100F4DD84 /* Entity.swift in Sources */,
 				9F9DD9092C4866FE00F4DD84 /* Card.swift in Sources */,
